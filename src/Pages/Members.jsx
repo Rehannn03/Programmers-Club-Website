@@ -4,8 +4,9 @@ import axios from "axios";
 export function Members() {
     const[members, setMembers] = React.useState([])
     let headersList = {
-      "Accept": "*/*",
-      "User-Agent": "Thunder Client (https://www.thunderclient.com)"
+      "Accept": "application/json",
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
      }
     async function fetchMembers() {
       axios.get('https://rehanns.github.io/Members-Data/members.json',{
