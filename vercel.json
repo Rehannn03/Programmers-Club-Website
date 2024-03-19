@@ -1,0 +1,9 @@
+{
+    "rewrites":[
+        {"source":"/","destination":"/"},
+        {"source":"/members","destination":"/members"},
+        {"source":"/events","destination":"/events"},
+        {"source":"/about","destination":"/about"}
+        
+    ]
+}
