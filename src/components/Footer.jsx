@@ -7,7 +7,7 @@ function Footer() {
         {/* <!-- Social media icons container --> */}
         <div className="mb-6 flex justify-center space-x-2">
           <a
-            href="#!"
+            href="/"
             type="button"
             className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-2xl hover:bg-neutral-500 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
             data-twe-ripple-init
@@ -25,7 +25,7 @@ function Footer() {
           </a>
 
           <a
-            href="#!"
+            href="https://www.instagram.com/programmers.club/?igshid=g5mb31brjqi5&hl=en"
             type="button"
             className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-2xl hover:bg-neutral-500 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
             data-twe-ripple-init
@@ -43,7 +43,7 @@ function Footer() {
           </a>
 
           <a
-            href="#!"
+            href="https://www.linkedin.com/in/programmersclubmhssce/"
             type="button"
             className="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-2xl hover:bg-neutral-500 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:bg-neutral-700 dark:text-white"
             data-twe-ripple-init

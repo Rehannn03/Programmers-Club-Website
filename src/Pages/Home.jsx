@@ -50,33 +50,22 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white shadow-md rounded-md p-4 hover:shadow-2xl">
               <h3 className="text-lg font-medium text-gray-800 mb-2">
-                Hackathon 2024
+                Women's Day celebration
               </h3>
               <p className="text-gray-600">
-                Join us for a 24-hour coding challenge! Test your skills and
-                build something amazing.
+                Celebrating the achievements of today's Women.
               </p>
-              <Link
-                to="/"
-                className="text-light-blue-500 hover:text-light-blue-700 underline mt-4"
-              >
-                Learn More
-              </Link>
+              <a href="/events" class="m-2 inline-flex items-center justify-center rounded-xl border bg-white px-5 py-3 font-medium text-blue-600 shadow hover:bg-blue-50"> Learn more </a>
+
             </div>
             <div className="bg-white shadow-md rounded-md p-4 hover:shadow-2xl">
               <h3 className="text-lg font-medium text-gray-800 mb-2">
-                Guest Speaker: Jane Doe
+                Three 90 Challenge
               </h3>
               <p className="text-gray-600">
-                Hear from a renowned software engineer about her career journey
-                and insights.
+                A 90-second quiz challenge for all the members.
               </p>
-              <a
-                href="#"
-                className="text-light-blue-500 hover:text-light-blue-700 underline mt-4"
-              >
-                Register Now
-              </a>
+              <a href="/events" class="m-2 inline-flex items-center justify-center rounded-xl border bg-white px-5 py-3 font-medium text-blue-600 shadow hover:bg-blue-50"> Learn more </a>
             </div>
           </div>
         </div>
