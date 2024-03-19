@@ -11,9 +11,9 @@ function Card(props) {
     
     })
   return (
-    <div className="grid sm:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4 ">
+    <div className="grid sm:grid-cols-4 md:grid-cols-4 grid-cols-1 gap-4 ">
       {props.details.map((member, index) => (
-        <div className="relative flex flex-col  text-black bg-blue-300 shadow-md bg-clip-border rounded-xl w-80  " data-aos='fade-up'  >
+        <div className="relative flex flex-col  text-black bg-slate-200 shadow-md bg-clip-border rounded-xl w-80 hover:-translate-y-4 duration-200 " data-aos='fade-up'  >
           <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl h-80 ">
             <img
               src={member.src}

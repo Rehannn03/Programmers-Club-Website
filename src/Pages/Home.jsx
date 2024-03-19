@@ -5,10 +5,8 @@ function Home() {
   return (
     <div className="bg-gray-100">
       {/* Section 1: Hero Section */}
-      <section className="flex justify-center items-center h-screen bg-gradient-to-r relative ">
-      <video className="absolute inset-0 w-full h-full object-cover z-0" autoPlay loop muted>
-            <source src={backgroundVid} type="video/mp4"/>
-          </video>
+      <section className="flex justify-center items-center h-screen bg-gradient-to-r from-blue-700 to-blue-300">
+
         <div className="text-center z-10 ">
           
           <h1 className="text-5xl font-bold text-black ">
@@ -46,7 +44,7 @@ function Home() {
       {/* Section 3: Latest Events */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-gray-800 mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-8 ">
             Latest Events
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -4,66 +4,35 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
     const [active, setActive] = useState(false)
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-blue-500 p-6 z-10">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <svg
-          className="fill-current h-8 w-8 mr-2"
-          width="54"
-          height="54"
-          viewBox="0 0 54 54"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-        </svg>
-        <span className="font-medium text-2xl tracking-tight ">Programmers Club</span>
-      </div>
-      <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
-        >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow">
-          <Link
-            to="/"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white
-            hover:text-black mr-4
-            text-xl
-            font-medium
-            "
-            
-          >
-            Home
-          </Link>
-          <Link
-            to="/members"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white
-            hover:text-black mr-4
-            text-xl
-            font-medium"
-          >
-            Members
-          </Link>
-          <Link
-            to="/Events"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black
-            text-xl
-            font-medium"
-          >
-            Events
-          </Link>
-        </div>
-        
-      </div>
+    <header class="shadow mb-2 bg-blue-400">
+  <div class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center ">
+    <a href="/" class="flex items-center whitespace-nowrap text-2xl font-black">
+    <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+      <image href="https://res.cloudinary.com/projectbackend/image/upload/v1710839912/WhatsApp_Image_2024-03-18_at_11.46.37_PM-removebg-preview_indlvn.png" height="60" width="60" />
+    </svg>
+    <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+      <image href="https://res.cloudinary.com/projectbackend/image/upload/v1710839699/GFG_Logo_circluar-removebg-preview_oh0qhh.png" height="60" width="60" />
+    </svg>
+      <span class="text-black text-2xl font-bold ml-3">Programmers Club</span>
+    </a>
+    <input type="checkbox" class="peer hidden" id="navbar-open" />
+    <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+      <span class="sr-only">Toggle Navigation</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+    <nav aria-label="Header Navigation" class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+      <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+        <li class="text-white md:mr-12 hover:text-black font-bold text-xl"><a href="/">Home</a></li>
+        <li class="text-white md:mr-12 hover:text-black font-bold text-xl"><a href="/members">Members</a></li>
+        <li class="text-white md:mr-12 hover:text-black font-bold text-xl"><a href="/events">Events</a></li>
+        <li class="text-white md:mr-12 hover:text-black font-bold text-xl"><a href="/about">About</a></li>
+    
+      </ul>
     </nav>
+  </div>
+</header>
   );
 };
 
