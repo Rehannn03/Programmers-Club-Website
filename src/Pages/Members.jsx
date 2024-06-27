@@ -21,7 +21,7 @@ export function Members() {
       fetchMembers()
     },[])
   return (
-    <div className="bg-blue-300">
+    <div className="bg-blue-300 mb-2" >
       {/* Page Header */}
       <section className="text-center py-8">
         <h1 className="text-3xl font-bold text-gray-800  underline">
